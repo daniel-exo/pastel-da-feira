@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 02 · Ponto · Pastel da Feira</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site"><a class="brand" href="index.html"><img src="exo-logo.png" alt="EXO"> Pastel da Feira <small>um caso de IA generativa</small></a><nav class="mods"><a href="index.html"><b>00</b>Visão geral</a><a href="modulo-01.html"><b>01</b>Cliente</a><a href="modulo-02.html" class="cur"><b>02</b>Ponto</a><a href="modulo-03.html"><b>03</b>Preço</a><a href="modulo-04.html"><b>04</b>Marca</a><a href="modulo-05.html"><b>05</b>Lançamento</a><span class="sep"></span><a href="modulo-06.html"><b>06</b>Operação</a><a href="modulo-07.html"><b>07</b>Criação</a><a href="modulo-08.html"><b>08</b>Padrões</a><a href="modulo-09.html"><b>09</b>Skill</a><span class="sep"></span><a href="minhas-respostas.html"><b>✍</b>Respostas</a></nav></header>
+<div class="wrap"><div class="grid">
+<aside class="metabox"><div class="modnum">MÓDULO 02</div><h1>Onde montamos a banca — e por que ali?</h1><h4 class="kicker">O QUE VOCÊ ESTÁ FAZENDO</h4>
+<p>Escolhendo um ponto que você consegue defender com argumentos, não com palpite.</p>
+<h4 class="kicker">O QUE VOCÊ ESTÁ APRENDENDO</h4>
+<p>IA consegue ler imagens e raciocinar a partir delas — mas só do que está na imagem. Saber o que <em>não</em> está na foto é o resto do trabalho.</p>
+<h4 class="kicker">ONDE VOCÊ VAI TRABALHAR</h4>
+<p>Claude (claude.ai ou app desktop)</p>
+<h4 class="kicker">O QUE VOCÊ VAI PRECISAR</h4>
+<ul>
+<li><code>mapa-do-bairro.png</code> — o mapa ilustrado do bairro, com os oito pontos (1 a 8) onde a subprefeitura autoriza barracas de alimento — dentro e fora da feira. Sua TPU vale para qualquer um deles. <strong><a class="btn small" href="arquivos/mapa-do-bairro.png" download>Baixar mapa ↓</a></strong></li>
+<li><code>personas.docx</code> — o arquivo que você salvou no Módulo 1, na sua pasta <code>pastel-da-feira/saidas/</code></li>
+</ul></aside>
+<article><p>Você mora nesse bairro há anos e caminha essas ruas todo fim de semana. Sabe coisas sobre esse lugar que não aparecem em mapa nenhum: a rua da feira fecha para carros só até as 13h — depois disso o movimento morre de uma vez. A esquina da igreja parece ótima no papel, mas a missa das 10h despeja todo mundo com pressa de ir embora, não de comer. A praça fotografa bem, mas desde a obra do estacionamento virou passagem, não parada. Já a saída da quadra de futebol society despeja às 11h30 uma multidão suada e faminta — e isso nenhum mapa mostra.</p>
+<p>E tem a decisão dentro da decisão: montar <em>dentro</em> da feira (pontos 2 e 3) garante fluxo pronto — e a Dona Marta, vinte e dois anos de freguesia, a poucos metros. Montar <em>fora</em> (os outros seis pontos) significa fluxo que é só seu... se ele existir. Sua TPU vale para qualquer um dos oito.</p>
+<p>Abra o Claude num chat novo. Anexe o mapa e o arquivo de personas. Peça ao Claude que proponha três pontos para a sua banca e explique o raciocínio de cada um. <em>Não conte o que você sabe sobre o bairro — só mostre o mapa e as personas, e deixe que ele trabalhe com o que consegue ver.</em></p>
+<h3>Dois jeitos de ver o mesmo bairro</h3>
+<h4 class="kicker">O QUE O CLAUDE CONSEGUE VER NO MAPA</h4>
+<ul>
+<li>Ruas, esquinas e construções identificadas</li>
+<li>Onde mora gente e onde ficam os "lugares" formais</li>
+<li>Pontos de referência visíveis — escola, igreja, praça, quadra</li>
+<li>Relações espaciais: o que fica perto do quê, o que é caminho</li>
+</ul>
+<h4 class="kicker">O QUE VOCÊ SABE E O MAPA NÃO MOSTRA</h4>
+<ul>
+<li>A rua da feira esvazia depois das 13h — <em>o mapa não tem horário</em></li>
+<li>A missa das 10h gera fluxo, mas de gente com pressa</li>
+<li>A praça virou passagem desde a obra — <em>na foto continua linda</em></li>
+<li>O futebol society solta 40 pessoas famintas às 11h30</li>
+<li>Tudo o que um morador sabe e uma imagem não carrega</li>
+</ul>
+<div class="checkpoint">✓ <em>Três propostas em mãos. Adiante.</em></div>
+<blockquote><p>O Claude propôs três pontos com base no que o mapa mostra. Dois provavelmente são bons. Um provavelmente é furado — e você só consegue perceber por causa de algo que o Claude não tinha como ver. Alguém de fora, lendo as mesmas propostas, não teria como saber. A sua vivência — a que vem de morar, trabalhar e circular ali — é o que fecha essa lacuna. <em>Na era da IA, esse tipo de conhecimento importa mais, não menos.</em></p></blockquote>
+<p>Agora olhe as três propostas do Claude, uma de cada vez. Para cada uma, faça duas perguntas a si mesmo: <em>o que o Claude viu no mapa que o fez sugerir este ponto?</em> E: <em>algo que eu sei do bairro — o horário da feira, a missa, a obra na praça — derruba essa proposta?</em> A que sobreviver às duas perguntas é a sua resposta. Com o ponto escolhido, peça ao Claude um memorando de decisão curto, em documento Word: o ponto escolhido, seu raciocínio, e o que você considerou e descartou.</p>
+<h4 class="kicker">SALVE SEU TRABALHO</h4>
+<p>Renomeie o arquivo baixado para <code>ponto-decisao.docx</code> e mova para a pasta <code>saidas/</code> que você criou no Módulo 1 (ela já deve conter <code>personas.docx</code>). Você vai usar os dois no Módulo 3.</p>
+<div class="warn">⚠ <em>Antes do próximo módulo — role para cima e responda as perguntas de Reflexão na lateral.</em></div><details class="fb ok"><summary>Deu certo</summary><div class="inner"><p>O Claude justificou cada ponto com algo visível no mapa ("perto da entrada da feira", "esquina com fluxo de duas ruas")? Ótimo — repare que toda justificativa dele é <em>visual</em>. Nenhuma menciona horário, cheiro de óleo do concorrente ou o humor do fiscal da prefeitura. A qualidade do raciocínio é alta; o alcance é limitado ao que entrou. Guarde essa distinção: ela vale para qualquer análise que a IA fizer para você daqui em diante.</p></div></details><details class="fb nok"><summary>Não deu certo</summary><div class="inner"><ul>
+<li><strong>O Claude descreveu o mapa mas não propôs pontos.</strong> Seja direto: "proponha exatamente 3 pontos entre os marcados de 1 a 8 e justifique cada um".</li>
+<li><strong>Ele propôs um ponto sem número, fora dos marcados.</strong> Responda: "considere apenas os pontos numerados de 1 a 8". Modelos às vezes inventam opções quando a instrução não limita.</li>
+<li><strong>As justificativas vieram vagas ("bom movimento").</strong> Peça: "para cada ponto, cite o que exatamente no mapa sustenta a escolha". Forçar a citação da evidência melhora o raciocínio — truque que funciona em qualquer análise.</li>
+<li><strong>Você discorda das três propostas.</strong> Perfeito, isso é resultado, não erro. Diga ao Claude o que você sabe que ele não viu e peça uma nova rodada. A decisão final continua sendo sua.</li>
+</ul></div></details></article>
+<aside class="sidebar"><h2>REFLEXÃO</h2><p class="noprint" style="font-size:12px;color:var(--soft);margin-top:-8px">Suas respostas ficam salvas neste navegador — reúna tudo em <a href="minhas-respostas.html">Minhas respostas</a>.</p><div class="q"><div class="ql">Quais pontos o Claude sugeriu?</div>
+<textarea placeholder="ex.: 2, 5, 6..." data-k="modulo-02-q1"></textarea>
+</div>
+<div class="q"><div class="ql">Qual você escolheria, e por quê?</div>
+<div class="qh">Um ponto — o do Claude ou o seu. Esse memorando te acompanha até o fim do curso.</div>
+<textarea placeholder="Seu ponto + uma linha de raciocínio..." data-k="modulo-02-q2"></textarea>
+</div>
+<div class="q"><div class="ql">Você seguiu a sugestão do Claude?</div>
+<div class="qh">Se sim, o que te convenceu? Se não, o que você sabia que ele não sabia?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-02-q3"></textarea>
+</div>
+<div class="q"><div class="ql">E no seu trabalho: que análise você recebe pronta — de um relatório, um dashboard, uma consultoria — em que o seu conhecimento de contexto deveria pesar mais do que pesa?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-02-q4"></textarea>
+</div>
+<div class="principle"><span class="pl">O PRINCÍPIO</span>A IA vê o que está no mapa. Você sabe o que está no bairro. A decisão precisa dos dois.</div>
+<div class="next"><h4 class='kicker'>A SEGUIR</h4><p>Você tem um cliente e uma esquina. Agora: quanto cobrar? → <strong>Módulo 03 · Preço</strong></p></div></aside>
+</div></div><footer class="mod"><a href="modulo-01.html">← Módulo 01 · Cliente</a><a href="modulo-03.html">Módulo 03 · Preço →</a></footer>
+<script>document.querySelectorAll("textarea,input[type=text]").forEach(e=>{const k="pf-"+(e.dataset.k||Math.random());e.dataset.k&&(e.value=localStorage.getItem(k)||"");e.addEventListener("input",()=>localStorage.setItem(k,e.value))})</script></body></html>

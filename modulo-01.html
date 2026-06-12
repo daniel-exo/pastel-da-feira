@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 01 · Cliente · Pastel da Feira</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site"><a class="brand" href="index.html"><img src="exo-logo.png" alt="EXO"> Pastel da Feira <small>um caso de IA generativa</small></a><nav class="mods"><a href="index.html"><b>00</b>Visão geral</a><a href="modulo-01.html" class="cur"><b>01</b>Cliente</a><a href="modulo-02.html"><b>02</b>Ponto</a><a href="modulo-03.html"><b>03</b>Preço</a><a href="modulo-04.html"><b>04</b>Marca</a><a href="modulo-05.html"><b>05</b>Lançamento</a><span class="sep"></span><a href="modulo-06.html"><b>06</b>Operação</a><a href="modulo-07.html"><b>07</b>Criação</a><a href="modulo-08.html"><b>08</b>Padrões</a><a href="modulo-09.html"><b>09</b>Skill</a><span class="sep"></span><a href="minhas-respostas.html"><b>✍</b>Respostas</a></nav></header>
+<div class="wrap"><div class="grid">
+<aside class="metabox"><div class="modnum">MÓDULO 01</div><h1>Quem é o cliente?</h1><h4 class="kicker">O QUE VOCÊ ESTÁ FAZENDO</h4>
+<p>Descobrindo quem de fato pararia na sua banca — antes de construir qualquer coisa para essas pessoas.</p>
+<h4 class="kicker">O QUE VOCÊ ESTÁ APRENDENDO</h4>
+<p>Como escrever um prompt que te devolve algo útil — não algo genérico.</p>
+<h4 class="kicker">ONDE VOCÊ VAI TRABALHAR</h4>
+<p>Claude (claude.ai ou app desktop) <em>↳ Não sabe onde encontrar? [instruções no Módulo 00]</em></p></aside>
+<article><p>É noite de quinta. Você está na mesa da cozinha com um caderno em branco, tentando imaginar quem de fato pararia na sua banca de pastel neste domingo. Dá para chutar — feirantes com fome, famílias fazendo a feira, gente voltando da corrida — mas isso é todo mundo, o que significa que não é ninguém. Antes de escrever sua própria lista, você decide ver o que o Claude faz da pergunta.</p>
+<p>Abra o Claude num chat novo (em <a href="https://claude.ai" target="_blank" rel="noopener"><code>claude.ai</code></a> no navegador, ou no app desktop) e peça três personas de clientes para a sua banca. Olhe o que volta. Muito provavelmente será plausível mas genérico — o tipo de persona que poderia descrever quase qualquer produto. Essa é a primeira coisa que vale notar, e é o tipo de coisa que só se aprende tentando. Depois de ver, leia a comparação abaixo.</p>
+<h3>A mesma pergunta, feita de dois jeitos</h3>
+<h4 class="kicker">PRIMEIRA TENTATIVA</h4>
+<pre><code>Me dê personas de clientes para uma banca de pastel.</code></pre>
+<p><em>Sem restrições, sem contraste, sem formato para a resposta. Voltam arquétipos plausíveis que poderiam descrever qualquer produto, em qualquer lugar.</em></p>
+<h4 class="kicker">VERSÃO AFIADA</h4>
+<pre><code>Gere 3 personas de clientes para uma banca de pastel de feira
+e caldo de cana que abre aos domingos de manhã num bairro
+residencial (o ponto exato ainda não foi decidido).
+Para cada uma, escreva uma linha de &quot;por que pararia&quot; e uma
+linha de &quot;por que passaria direto&quot;. Faça as três distintas o
+bastante para que eu planejasse o cardápio e a comunicação de
+forma diferente para cada uma. Coloque o resultado em um
+documento Word que eu possa salvar.</code></pre>
+<p><em>Um escopo (feira de domingo, bairro residencial), uma forma (três personas, duas linhas cada), um contraste (pararia vs. passaria direto) e um formato de saída (documento Word) — assim o Claude produz algo que você consegue de fato salvar e reutilizar.</em></p>
+<div class="checkpoint">✓ <em>Primeira tentativa em mãos. Adiante.</em></div>
+<blockquote><p>O Claude não ficou mais inteligente entre os dois prompts. Você ficou. A versão afiada adicionou escopo, forma e contraste — e essas restrições são o que forçou uma resposta utilizável.</p></blockquote>
+<p>Agora reescreva seu prompt — mantenha a estrutura da versão afiada, mas troque os detalhes pelos seus — e rode de novo. Desta vez o Claude vai produzir um documento Word. Baixe-o pelo chat.</p>
+<h4 class="kicker">SALVE SEU TRABALHO</h4>
+<p>Dentro da pasta <code>pastel-da-feira/</code> do projeto, crie a subpasta <code>saidas/</code> se ainda não criou. Renomeie o arquivo baixado para <code>personas.docx</code> e mova para lá. Você vai usar essa mesma pasta <code>saidas/</code> em todos os módulos — ao final terá o conjunto completo do trabalho num só lugar.</p>
+<div class="warn">⚠ <em>Antes do próximo módulo — role para cima e responda as perguntas de Reflexão na lateral. Pode ser breve; as respostas são suas.</em></div><details class="fb ok"><summary>Deu certo</summary><div class="inner"><p>O documento Word chegou com três personas distintas? Repare em duas coisas antes de seguir. Primeira: as linhas de "passaria direto" — elas costumam ser mais úteis que as de "pararia", porque dizem o que sua comunicação precisa superar. Segunda: o Claude provavelmente tomou pequenas decisões que você não pediu (nomes, idades, profissões). Tudo bem — mas note quais dessas decisões você manteria e quais trocaria. Esse reflexo de editar em vez de aceitar é o que você vai usar o curso inteiro.</p></div></details><details class="fb nok"><summary>Não deu certo</summary><div class="inner"><p>Alguns tropeços comuns, e o que fazer:</p>
+<ul>
+<li><strong>As personas vieram genéricas mesmo no prompt afiado.</strong> Verifique se você manteve o contraste ("pararia vs. passaria direto") — é a parte do prompt que mais força especificidade. Se manteve, adicione uma restrição a mais: "nenhuma das três pode ser 'família fazendo compras'".</li>
+<li><strong>Não veio documento Word, só texto no chat.</strong> Peça explicitamente: "coloque o resultado em um arquivo .docx para download". Se ainda assim não vier, seu chat pode estar no plano gratuito sem essa capacidade no momento — copie o texto para um documento seu; o conteúdo é o que importa.</li>
+<li><strong>Vieram 5 personas, ou personas com parágrafos enormes.</strong> O Claude extrapolou a forma. Responda: "mantenha exatamente 3 personas, máximo de 4 linhas cada". Corrigir com uma mensagem curta faz parte do trabalho — não recomece o chat.</li>
+</ul></div></details></article>
+<aside class="sidebar"><h2>REFLEXÃO</h2><p class="noprint" style="font-size:12px;color:var(--soft);margin-top:-8px">Suas respostas ficam salvas neste navegador — reúna tudo em <a href="minhas-respostas.html">Minhas respostas</a>.</p><div class="q"><div class="ql">O que sua primeira tentativa produziu?</div>
+<div class="qh">Uma linha sobre o quão genérico ficou.</div>
+<textarea placeholder="ex.: três arquétipos vagos que serviriam para qualquer produto..." data-k="modulo-01-q1"></textarea>
+</div>
+<div class="q"><div class="ql">O que você mudou no segundo prompt?</div>
+<div class="qh">Escopo, forma, contraste, formato — nomeie o que você adicionou.</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-01-q2"></textarea>
+</div>
+<div class="q"><div class="ql">Olhando suas três personas finais — o que é útil de verdade? O que ainda parece genérico?</div>
+<textarea placeholder="Seja específico sobre qual persona e por quê..." data-k="modulo-01-q3"></textarea>
+</div>
+<div class="q"><div class="ql">E no seu trabalho: que pedido vago você faz hoje — a um colega, a um fornecedor, a uma IA — que volta genérico do mesmo jeito?</div>
+<div class="qh">Essa é a pergunta que vai com você para segunda-feira.</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-01-q4"></textarea>
+</div>
+<div class="principle"><span class="pl">O PRINCÍPIO</span>Prompt é briefing, não pedido. As restrições que você coloca — escopo, forma, contraste, formato — são o que torna a resposta utilizável.</div>
+<div class="next"><h4 class='kicker'>A SEGUIR</h4><p>Com as personas em mãos, onde você monta a banca? → <strong>Módulo 02 · Ponto</strong></p></div></aside>
+</div></div><footer class="mod"><a href="index.html">← Módulo 00 · Visão geral</a><a href="modulo-02.html">Módulo 02 · Ponto →</a></footer>
+<script>document.querySelectorAll("textarea,input[type=text]").forEach(e=>{const k="pf-"+(e.dataset.k||Math.random());e.dataset.k&&(e.value=localStorage.getItem(k)||"");e.addEventListener("input",()=>localStorage.setItem(k,e.value))})</script></body></html>

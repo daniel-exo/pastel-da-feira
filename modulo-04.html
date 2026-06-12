@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 04 · Marca · Pastel da Feira</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site"><a class="brand" href="index.html"><img src="exo-logo.png" alt="EXO"> Pastel da Feira <small>um caso de IA generativa</small></a><nav class="mods"><a href="index.html"><b>00</b>Visão geral</a><a href="modulo-01.html"><b>01</b>Cliente</a><a href="modulo-02.html"><b>02</b>Ponto</a><a href="modulo-03.html"><b>03</b>Preço</a><a href="modulo-04.html" class="cur"><b>04</b>Marca</a><a href="modulo-05.html"><b>05</b>Lançamento</a><span class="sep"></span><a href="modulo-06.html"><b>06</b>Operação</a><a href="modulo-07.html"><b>07</b>Criação</a><a href="modulo-08.html"><b>08</b>Padrões</a><a href="modulo-09.html"><b>09</b>Skill</a><span class="sep"></span><a href="minhas-respostas.html"><b>✍</b>Respostas</a></nav></header>
+<div class="wrap"><div class="grid">
+<aside class="metabox"><div class="modnum">MÓDULO 04</div><h1>Que cara a banca deve ter?</h1><h4 class="kicker">O QUE VOCÊ ESTÁ FAZENDO</h4>
+<p>Construindo um manual de marca — mesmo nunca tendo feito um na vida.</p>
+<h4 class="kicker">O QUE VOCÊ ESTÁ APRENDENDO</h4>
+<p>Skills empacotam expertise. Pegue uma emprestada quando não souber o caminho; mais tarde, empacote a sua.</p>
+<h4 class="kicker">ONDE VOCÊ VAI TRABALHAR</h4>
+<p>Claude (claude.ai ou app desktop) com uma Skill instalada</p>
+<h4 class="kicker">O QUE VOCÊ VAI PRECISAR</h4>
+<ul>
+<li><code>construtor-de-marca.skill</code> — uma Skill guiada de construção de marca, escrita para quem não é designer <strong><a class="btn small" href="arquivos/construtor-de-marca.skill" download>Baixar a Skill ↓</a></strong></li>
+<li>Da sua pasta <code>saidas/</code>: <code>personas.docx</code>, <code>ponto-decisao.docx</code>, <code>preco-decisao.docx</code> e <code>custos.xlsx</code></li>
+</ul></aside>
+<article><p>Até aqui, cada decisão sua foi sustentada por números — cliente, ponto, preço. A marca é a parte que você vem adiando em silêncio, porque não sabe nem por onde começar. Você não é designer. Nunca montou um manual de marca. Não saberia dizer o que vai dentro de um. É exatamente para essa situação que Skills foram feitas.</p>
+<h3>Primeiro — o que é uma Skill?</h3>
+<h4 class="kicker">Um jeito de transformar o Claude generalista em um especialista.</h4>
+<p>De fábrica, o Claude é um generalista — útil para muitas coisas, especialista em nenhuma. Uma <strong>Skill</strong> é um pacote pequeno — instruções escritas mais algumas referências que o Claude pode consultar — que dá a ele um <em>papel</em>: um processo a seguir, perguntas a fazer, e o tipo de saída a produzir. O modelo não muda. O que muda é quem o agente se torna quando a Skill está ativa.</p>
+<p>Pense como você pensaria numa contratação. No primeiro dia, a pessoa nova é capaz, mas ainda não conhece o trabalho. Entregue um manual de procedimentos, alguns documentos de exemplo, um processo claro e as regras da casa — e ela vira especialista. Uma Skill é esse kit de integração, escrito para o Claude. Instalada, o Claude vira um diretor criativo, um entrevistador, um revisor de contratos — o papel que a Skill codificar.</p>
+<h3>Como instalar a Skill no Claude</h3>
+<p>Baixe a Skill (link acima) e instale — o caminho é o mesmo em <a href="https://claude.ai" target="_blank" rel="noopener"><code>claude.ai</code></a> no navegador e no app desktop:</p>
+<ol>
+<li>Na barra lateral do Claude, clique em <strong>Personalizar</strong> <em>(se a barra estiver recolhida, clique antes no ícone de menu no canto superior esquerdo)</em>.</li>
+<li>Clique em <strong>Skills</strong> no menu.</li>
+<li>Clique no botão <strong>+</strong> no alto do painel de Skills.</li>
+<li>Passe o mouse em <strong>Criar skill</strong> → escolha <strong>Enviar uma skill</strong>.</li>
+<li>Selecione <code>construtor-de-marca.skill</code> na sua pasta de Downloads.</li>
+</ol>
+<p>Instalada, a Skill ativa sozinha quando você pedir algo que ela reconhece.</p>
+<h3>Agora, use</h3>
+<p>Abra uma conversa nova, anexe <code>personas.docx</code>, <code>ponto-decisao.docx</code> e <code>preco-decisao.docx</code> da sua pasta <code>saidas/</code>, e diga algo como:</p>
+<pre><code>Me ajude a construir o manual de marca da minha banca de
+domingo de pastel de feira e caldo de cana. Anexei minhas
+personas, minha decisão de ponto e minha decisão de preço
+como contexto.</code></pre>
+<p>A Skill deve ativar automaticamente. Daí em diante, converse — responda o que ela perguntar, reaja ao que ela mostrar. A conversa completa leva uns 10 a 15 minutos. <em>Não atropele as perguntas; elas são o valor.</em></p>
+<h4 class="kicker">O QUE VOCÊ VAI SENTIR</h4>
+<p>Até agora, em todas as conversas, <em>você</em> perguntava e o Claude respondia. <strong>Com uma Skill ativa, isso inverte.</strong> O Claude fica propositivo — faz perguntas como um designer faria, porque a Skill deu a ele um roteiro do que perguntar e quando. Você vai ver propostas lado a lado ("mais boteco raiz ou mais feira gourmet?"), pares de tipografia para reagir, paletas de cor, frases de posicionamento para aprovar ou rejeitar. Menos formulário, mais sessão de trabalho com um diretor criativo que já fez isso cinquenta vezes.</p>
+<div class="checkpoint">✓ <em>Manual de marca em mãos. Agora vamos abrir o capô.</em></div>
+<h3>Você acabou de sentir o que uma Skill faz. Agora veja como — abrindo o arquivo.</h3>
+<p><em>Estes são os trechos que moldaram a experiência que você acabou de ter.</em></p>
+<h4 class="kicker">1 · O CABEÇALHO</h4>
+<pre><code>name: construtor-de-marca
+description: Use esta skill sempre que o usuário quiser ajuda
+  para criar manual de marca, identidade visual ou &quot;linguagem
+  de design&quot; do seu negócio — especialmente quando for um
+  fundador ou dono de negócio que precisa articular uma marca
+  sem conhecer o vocabulário de design. Ative com frases como
+  &quot;manual de marca&quot;, &quot;identidade visual&quot;, &quot;que cara o negócio
+  deve ter&quot;.</code></pre>
+<p>A <code>description</code> é a regra de "quando usar". O Claude a lê e decide sozinho quando ativar a Skill — por isso ela ligou mesmo sem você dizer "use a Skill".</p>
+<h4 class="kicker">2 · A POSTURA</h4>
+<pre><code>## Postura
+
+Seja um diretor criativo confiante, não um aplicador de
+questionário. Proponha, não pesquise. Mostre, não pergunte
+no vazio. Evite jargão de design por padrão (&quot;o amarelo
+quente com o tom de telha&quot;, não &quot;a paleta terciária quente&quot;)
+— acompanhe o vocabulário do usuário.</code></pre>
+<p><strong>O que faz:</strong> define a voz e a atitude. Sem isso, o Claude volta ao padrão de pesquisador educado ("qual sua cor favorita?"). <strong>Por que existe:</strong> quem não é designer não responde bem a perguntas abstratas sobre estilo visual — mas reage muito bem a uma proposta concreta. A postura faz o Claude liderar, para você reagir em vez de adivinhar.</p>
+<h4 class="kicker">3 · O ROTEIRO</h4>
+<pre><code>## Roteiro
+
+Cinco fases mais uma etapa opcional de nomeação. ~10–15 min.
+
+0. Nomeação (opcional)
+1. Contexto do negócio (2–3 min)
+2. Âncoras da marca (3–5 min) — a fase mais importante
+3. Personalidade tipográfica (2–3 min)
+4. Direção de cor (2–3 min)
+5. Geração — produzir o manual em HTML</code></pre>
+<p>O processo estruturado. Cada fase tem instruções detalhadas mais adiante no arquivo (o que perguntar, o que mostrar, o que extrair). Repare nas estimativas de tempo — é o autor controlando o ritmo da conversa. O Claude segue o roteiro, mas nunca entra no piloto automático.</p>
+<blockquote><p><em>Isso é só o destaque. O arquivo completo tem mais — anti-padrões (frases que o Claude está proibido de usar), a biblioteca de referências (pares de fonte, paletas) e o template HTML do manual. Se quiser ler inteiro:</em> <a href="arquivos/construtor-de-marca.skill" download>baixe a Skill e abra o SKILL.md ↓</a></p></blockquote>
+<p>Você acabou de ser conduzido por uma construção de marca por alguém que sabia o que estava fazendo — sem precisar encontrar nem pagar esse alguém. A Skill não era mais inteligente que o Claude. Era o Claude com o manual de procedimentos que outra pessoa escreveu.</p>
+<p>Quando você não sabe fazer algo, procure uma Skill que capture quem sabe. E quando você <em>sabe</em> fazer algo — entrevistar clientes, avaliar fornecedores, revisar contratos, rodar o planejamento trimestral — você pode escrever esse processo numa Skill, e o Claude o executa para qualquer pessoa do seu time. Mesmo mecanismo, nos dois sentidos. <em>É para isso que volta o Módulo 09.</em></p>
+<p>O Claude terá produzido seu manual de marca como um artefato HTML ali na conversa — você pode visualizá-lo inline. Leia como leria o trabalho de um fornecedor estranho. Formal demais? Paleta errada? A frase de posicionamento não soa como você? — diga ao Claude. Skills são feitas para aguentar "não, mais parecido com isto". Uma rodada de ajuste é metade da diversão.</p>
+<h4 class="kicker">SALVE SEU TRABALHO</h4>
+<p>Baixe o manual final pelo chat e salve como <code>manual-de-marca.html</code> na sua pasta <code>saidas/</code>. Você vai reenviá-lo no Módulo 5.</p>
+<div class="warn">⚠ <em>Antes do próximo módulo — role para cima e responda as perguntas de Reflexão na lateral.</em></div><details class="fb ok"><summary>Deu certo</summary><div class="inner"><p>A Skill perguntou, você reagiu, e no fim saiu um manual com nome, âncoras, tipografia e cores? Repare numa coisa antes de seguir: em que momento da conversa você sentiu que <em>tinha opinião</em> sobre design — você, que "não entende de design"? Provavelmente quando viu duas opções lado a lado. Esse é o truque central da Skill: ninguém sabe descrever a marca que quer, mas todo mundo sabe escolher entre duas propostas concretas. Guarde isso para quando for desenhar processos para outras pessoas.</p></div></details><details class="fb nok"><summary>Não deu certo</summary><div class="inner"><ul>
+<li><strong>A Skill não ativou — o Claude respondeu genérico.</strong> Confirme a instalação (Personalizar → Skills → ela aparece na lista?). Se sim, mencione na mensagem: "use a skill construtor-de-marca". Mencionar o nome força a ativação.</li>
+<li><strong>O upload da Skill falhou.</strong> Verifique se o arquivo ainda é <code>.skill</code> — alguns navegadores renomeiam para <code>.zip</code> no download. Renomeie de volta e tente de novo.</li>
+<li><strong>A conversa virou questionário chato, sem propostas.</strong> A Skill perdeu a postura. Diga: "me mostre duas direções concretas lado a lado em vez de me perguntar". Ela retoma o papel.</li>
+<li><strong>O manual saiu bonito mas não parece seu.</strong> Normal — é a primeira rodada. Aponte o que está errado em linguagem comum ("formal demais", "essas cores parecem farmácia") e peça nova versão. Refinar faz parte do uso, não é falha.</li>
+</ul></div></details></article>
+<aside class="sidebar"><h2>REFLEXÃO</h2><p class="noprint" style="font-size:12px;color:var(--soft);margin-top:-8px">Suas respostas ficam salvas neste navegador — reúna tudo em <a href="minhas-respostas.html">Minhas respostas</a>.</p><div class="q"><div class="ql">Que pergunta a Skill fez que você nunca teria pensado em fazer?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-04-q1"></textarea>
+</div>
+<div class="q"><div class="ql">Olhando o manual pronto — parece seu, ou parece um kit genérico?</div>
+<div class="qh">O que faria ele ficar mais seu?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-04-q2"></textarea>
+</div>
+<div class="q"><div class="ql">Que tarefa recorrente do seu trabalho — algo que você faz sempre e os outros não sabem fazer — você imagina empacotando numa Skill?</div>
+<div class="qh">Integração de fornecedor? Revisão semanal? Avaliação de propostas? Qualquer coisa com processo.</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-04-q3"></textarea>
+</div>
+<div class="principle"><span class="pl">O PRINCÍPIO</span>Skills são expertise empacotada e portátil. Pegue emprestado o que você não sabe. Empacote o que você sabe.</div>
+<div class="next"><h4 class='kicker'>A SEGUIR</h4><p>Você tem um cliente, uma esquina, um preço e uma marca. Agora: lançar. → <strong>Módulo 05 · Lançamento</strong></p></div></aside>
+</div></div><footer class="mod"><a href="modulo-03.html">← Módulo 03 · Preço</a><a href="modulo-05.html">Módulo 05 · Lançamento →</a></footer>
+<script>document.querySelectorAll("textarea,input[type=text]").forEach(e=>{const k="pf-"+(e.dataset.k||Math.random());e.dataset.k&&(e.value=localStorage.getItem(k)||"");e.addEventListener("input",()=>localStorage.setItem(k,e.value))})</script></body></html>

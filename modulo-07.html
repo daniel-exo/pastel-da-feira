@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 07 · Criação · Pastel da Feira</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site"><a class="brand" href="index.html"><img src="exo-logo.png" alt="EXO"> Pastel da Feira <small>um caso de IA generativa</small></a><nav class="mods"><a href="index.html"><b>00</b>Visão geral</a><a href="modulo-01.html"><b>01</b>Cliente</a><a href="modulo-02.html"><b>02</b>Ponto</a><a href="modulo-03.html"><b>03</b>Preço</a><a href="modulo-04.html"><b>04</b>Marca</a><a href="modulo-05.html"><b>05</b>Lançamento</a><span class="sep"></span><a href="modulo-06.html"><b>06</b>Operação</a><a href="modulo-07.html" class="cur"><b>07</b>Criação</a><a href="modulo-08.html"><b>08</b>Padrões</a><a href="modulo-09.html"><b>09</b>Skill</a><span class="sep"></span><a href="minhas-respostas.html"><b>✍</b>Respostas</a></nav></header>
+<div class="wrap"><div class="grid">
+<aside class="metabox"><div class="modnum">MÓDULO 07 · PARTE 2</div><h1>Qual vai ser o especial da semana?</h1><h4 class="kicker">O QUE VOCÊ ESTÁ FAZENDO</h4>
+<p>Inventando o pastel especial da próxima semana — com três fontes de ideias e um juiz implacável.</p>
+<h4 class="kicker">O QUE VOCÊ ESTÁ APRENDENDO</h4>
+<p>Gerar-e-filtrar: muitos candidatos, corte impiedoso, sobra o melhor. Mesmos sub-agentes de ontem, convergência diferente.</p>
+<h4 class="kicker">ONDE VOCÊ VAI TRABALHAR</h4>
+<p>Claude Desktop, no modo Cowork</p>
+<h4 class="kicker">O QUE VOCÊ VAI PRECISAR</h4>
+<p>Nada novo para baixar — só o que já está no seu projeto:</p>
+<ul>
+<li><code>saidas/semana-1-recap.docx</code> — do Módulo 6, com a voz do cliente</li>
+<li><code>saidas/manual-de-marca.html</code> — do Módulo 4</li>
+<li><code>saidas/custos.xlsx</code> — do Módulo 3</li>
+<li><code>operacao/avaliacoes.txt</code> — a fonte primária dos pedidos dos clientes</li>
+</ul></aside>
+<article><p>Segunda à tarde. O recap de ontem está na sua pasta <code>saidas/</code>, e nele uma decisão ficou martelando: os clientes pedem novidade. O queijo com goiabada apareceu três vezes nas avaliações. Mas palpite de cliente é começo de ideia, não cardápio — um especial precisa agradar o cliente, <em>e</em> caber na marca, <em>e</em> dar margem, <em>e</em> não complicar a operação às 11h da manhã com fila. Quatro exigências, uma vaga no cardápio. Este é um problema com formato — e o formato tem nome.</p>
+<h3>O padrão de hoje</h3>
+<h4 class="kicker">Gerar-e-filtrar — um arranjo diferente para os mesmos agentes.</h4>
+<p>No Módulo 6, os sub-agentes olharam <em>arquivos diferentes</em> e a síntese <strong>combinou</strong> os dois relatórios num só. Hoje os agentes olham o <em>mesmo problema</em> por ângulos diferentes — e ninguém combina nada: um <strong>filtro corta</strong>. Três geradores produzem 12 candidatos; um juiz avalia contra critérios fixos e devolve só os 3 melhores, com nota e justificativa. A diferença entre os dois módulos não está nos agentes — está em <strong>como o trabalho converge no final</strong>.</p>
+<p>Abra um chat novo no Cowork — mesmo projeto <code>pastel-da-feira/</code>. Leia o prompt antes de enviar; a estrutura dele é a aula:</p>
+<pre><code>Quero definir o pastel especial da próxima semana. Use o padrão
+gerar-e-filtrar, em dois estágios.
+
+ESTÁGIO 1 — três geradores em paralelo, 4 candidatos cada,
+total de 12. Cada candidato: nome do pastel, recheio, uma linha
+de venda e preço sugerido.
+
+- Voz do cliente — parta de operacao/avaliacoes.txt e do
+  semana-1-recap.docx em saidas/. Proponha o que os clientes
+  estão de fato pedindo.
+
+- Guardião da marca — parta do manual-de-marca.html em
+  saidas/. Proponha o que reforça a personalidade da banca,
+  mesmo que ninguém tenha pedido ainda.
+
+- Pé no chão — parta do custos.xlsx em saidas/. Proponha o que
+  maximiza margem usando insumos que eu já compro, sem
+  ingrediente novo.
+
+ESTÁGIO 2 — um filtro, depois que os três terminarem.
+Avalie os 12 candidatos contra quatro critérios, nota 1-5 em
+cada: desejo do cliente, encaixe na marca, margem, e
+simplicidade de operação com fila. Monte a tabela completa,
+corte para os 3 melhores e declare um vencedor, justificando.
+
+Salve tudo como especial-shortlist.docx na pasta saidas/:
+a tabela dos 12, os 3 finalistas e o vencedor.</code></pre>
+<h4 class="kicker">O QUE VOCÊ VAI VER</h4>
+<p>Três agentes nascendo de novo — mas desta vez com personalidades distintas, cada um puxando para um lado: o Voz do cliente vai propor o queijo com goiabada (claro), o Guardião da marca vai inventar algo com nome espirituoso, o Pé no chão vai sugerir o que usa a carne que já está no estoque. Depois, o filtro — friamente — dá nota em tudo. Quando terminar, abra o <code>especial-shortlist.docx</code> e vá direto à tabela.</p>
+<div class="checkpoint">✓ <em>Shortlist em mãos. Agora compare as duas segundas-feiras.</em></div>
+<h3>Os dois módulos, lado a lado</h3>
+<table><tr><th></th><th><strong>MÓDULO 06 — espalhar e sintetizar</strong></th><th><strong>MÓDULO 07 — gerar e filtrar</strong></th></tr><tr><td>Os agentes olham</td><td>arquivos diferentes</td><td>o mesmo problema, por ângulos diferentes</td></tr><tr><td>A etapa final</td><td><strong>combina</strong> os relatórios num só</td><td><strong>corta</strong> — avalia e descarta</td></tr><tr><td>O resultado é</td><td>um retrato completo</td><td>o melhor de muitos</td></tr><tr><td>Use quando</td><td>a tarefa tem partes independentes</td><td>qualidade vem de volume + critério</td></tr></table>
+<blockquote><p>Duas segundas-feiras, dois usos de sub-agentes em paralelo — e duas convergências completamente diferentes. A escolha entre combinar e cortar não foi do Claude: estava escrita no seu prompt, porque é uma decisão sobre o <em>formato do trabalho</em>, não sobre IA. <em>O formato do trabalho escolhe o padrão.</em></p></blockquote>
+<p>Antes de encerrar: olhe a tabela de notas com olho de dono. O filtro avaliou "simplicidade de operação" de longe, sem nunca ter fritado um pastel com fila. Se você sabe que recheio doce queima rápido no óleo da fila das 11h, é informação que a nota não captura — Módulo 2, de novo: a IA avalia o que está nos arquivos; o que não está em arquivo nenhum é com você. Vencedor confirmado (ou vetado), o especial da semana está escolhido.</p>
+<h4 class="kicker">SALVE SEU TRABALHO</h4>
+<p><code>especial-shortlist.docx</code> já deve estar em <code>saidas/</code>, salvo pelo Cowork. Confira — você vai reutilizar esse processo inteiro no Módulo 9.</p>
+<div class="warn">⚠ <em>Antes do próximo módulo — responda as perguntas de Reflexão na lateral.</em></div><details class="fb ok"><summary>Deu certo</summary><div class="inner"><p>Os três geradores produziram candidatos visivelmente diferentes entre si? Esse é o ponto do padrão: se os 12 candidatos parecem iguais, os ângulos estavam mal definidos — a diversidade vem do briefing de cada gerador, não da sorte. E repare no filtro: ele declarou um vencedor <em>com justificativa rastreável</em> (as notas). Você pode discordar da conclusão atacando o critério, não o palpite. Decisão auditável é o subproduto mais subestimado desse padrão.</p></div></details><details class="fb nok"><summary>Não deu certo</summary><div class="inner"><ul>
+<li><strong>Os 12 candidatos saíram parecidos.</strong> Os geradores conversaram entre si demais (ou os briefings eram vagos). Reforce a separação: "cada gerador trabalha isolado, sem ver os outros; os ângulos não podem se repetir".</li>
+<li><strong>O filtro elogiou todo mundo e não cortou.</strong> Modelos tendem à gentileza. Exija dureza: "notas honestas — quero ver nota 1 e 2 na tabela; se todos os 12 estão acima de 4, refaça a avaliação".</li>
+<li><strong>O filtro rodou antes dos geradores terminarem.</strong> Diga: "o estágio 2 só começa quando os três geradores entregarem os 12 candidatos". Sequência também é instrução.</li>
+<li><strong>O vencedor não te convenceu.</strong> Ótimo sinal de leitura crítica. Ajuste os pesos ("margem importa mais que desejo nesta fase") e peça só a reavaliação — os 12 candidatos continuam valendo; refazer o filtro é barato. É essa a graça de separar geração de avaliação.</li>
+</ul></div></details></article>
+<aside class="sidebar"><h2>REFLEXÃO</h2><p class="noprint" style="font-size:12px;color:var(--soft);margin-top:-8px">Suas respostas ficam salvas neste navegador — reúna tudo em <a href="minhas-respostas.html">Minhas respostas</a>.</p><div class="q"><div class="ql">Qual gerador produziu o melhor candidato — e o pior?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-07-q1"></textarea>
+</div>
+<div class="q"><div class="ql">Você confirmou ou vetou o vencedor do filtro? Por quê?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-07-q2"></textarea>
+</div>
+<div class="q"><div class="ql">E no seu trabalho: que decisão vocês tomam hoje a partir do primeiro palpite decente — onde gerar 12 opções e filtrar com critério mudaria o resultado?</div>
+<div class="qh">Nome de campanha? Pauta? Fornecedor? Candidato a vaga?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-07-q3"></textarea>
+</div>
+<div class="principle"><span class="pl">O PRINCÍPIO</span>O formato do trabalho escolhe o padrão.</div>
+<div class="next"><h4 class='kicker'>A SEGUIR</h4><p>Você já construiu dois padrões sem saber o nome deles. Hora de aprender os seis — e levá-los para o seu trabalho. → <strong>Módulo 08 · Padrões</strong></p></div></aside>
+</div></div><footer class="mod"><a href="modulo-06.html">← Módulo 06 · Operação</a><a href="modulo-08.html">Módulo 08 · Padrões →</a></footer>
+<script>document.querySelectorAll("textarea,input[type=text]").forEach(e=>{const k="pf-"+(e.dataset.k||Math.random());e.dataset.k&&(e.value=localStorage.getItem(k)||"");e.addEventListener("input",()=>localStorage.setItem(k,e.value))})</script></body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 03 · Preço · Pastel da Feira</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site"><a class="brand" href="index.html"><img src="exo-logo.png" alt="EXO"> Pastel da Feira <small>um caso de IA generativa</small></a><nav class="mods"><a href="index.html"><b>00</b>Visão geral</a><a href="modulo-01.html"><b>01</b>Cliente</a><a href="modulo-02.html"><b>02</b>Ponto</a><a href="modulo-03.html" class="cur"><b>03</b>Preço</a><a href="modulo-04.html"><b>04</b>Marca</a><a href="modulo-05.html"><b>05</b>Lançamento</a><span class="sep"></span><a href="modulo-06.html"><b>06</b>Operação</a><a href="modulo-07.html"><b>07</b>Criação</a><a href="modulo-08.html"><b>08</b>Padrões</a><a href="modulo-09.html"><b>09</b>Skill</a><span class="sep"></span><a href="minhas-respostas.html"><b>✍</b>Respostas</a></nav></header>
+<div class="wrap"><div class="grid">
+<aside class="metabox"><div class="modnum">MÓDULO 03</div><h1>Quanto cobramos — e como chegamos lá?</h1><h4 class="kicker">O QUE VOCÊ ESTÁ FAZENDO</h4>
+<p>Definindo preços a partir de números reais — e aprendendo a verificar o trabalho que a IA faz por você.</p>
+<h4 class="kicker">O QUE VOCÊ ESTÁ APRENDENDO</h4>
+<p>O Claude consegue cruzar vários arquivos de uma vez, citando de onde tirou cada número. Quanto mais rápido ele trabalha, mais importa você conhecer os seus dados.</p>
+<h4 class="kicker">ONDE VOCÊ VAI TRABALHAR</h4>
+<p>Claude (claude.ai ou app desktop)</p>
+<h4 class="kicker">O QUE VOCÊ VAI PRECISAR</h4>
+<p>Pasta <code>pesquisa/</code> com três arquivos: <strong><a class="btn small" href="arquivos/pesquisa.zip" download>Baixar pesquisa.zip ↓</a></strong></p>
+<ul>
+<li><code>custos-insumos.xlsx</code> — massa, recheios, óleo, gás, embalagens, cana</li>
+<li><code>precos-concorrentes.xlsx</code> — o que se cobra por comida e bebida na feira e no entorno</li>
+<li><code>entrevistas-clientes.docx</code> — conversas com frequentadores da feira</li>
+</ul>
+<p>E da sua pasta <code>saidas/</code>: <code>personas.docx</code> (Módulo 1) e <code>ponto-decisao.docx</code> (Módulo 2).</p></aside>
+<article><p>Você passou a semana fazendo o dever de casa: anotou preços de fornecedores no atacadão, andou pela feira anotando o que os concorrentes cobram, puxou conversa com frequentadores na fila do café. Virou uma pasta com três arquivos. Você poderia passar o sábado de calculadora na mão, montando a planilha de precificação na unha. Em vez disso, vai abrir o Claude e anexar tudo de uma vez.</p>
+<p>Antes de qualquer coisa: <strong>abra os três arquivos você mesmo e passe os olhos.</strong> Não precisa estudar — só ter uma noção do que tem dentro. Daqui a pouco você vai entender por quê.</p>
+<p>Abra o Claude num chat novo e anexe <strong>os cinco arquivos</strong>: os três da pasta <code>pesquisa/</code> mais <code>personas.docx</code> e <code>ponto-decisao.docx</code> da sua pasta <code>saidas/</code>. Então envie um prompt como este:</p>
+<pre><code>Estou planejando uma banca de domingo de pastel de feira e
+caldo de cana (o ponto já foi decidido — está no memorando
+anexo). Anexei cinco arquivos: três de pesquisa
+(custos de insumos, preços de concorrentes, entrevistas com
+clientes), mais minhas personas e minha decisão de ponto.
+
+Quero definir o cardápio inicial e os preços. Para começar:
+
+1. Resuma o que cada arquivo contém, em uma linha cada — quero
+   confirmar que você leu tudo certo.
+2. Antes de propor preços, me faça as perguntas que você
+   precisaria me fazer.
+3. Depois proponha preços para um cardápio enxuto, citando de
+   qual arquivo (e de onde nele) saiu cada número que você usar.
+4. Aponte onde os dados são fracos ou onde você está supondo.
+
+Não tenha pressa — uma etapa por vez.</code></pre>
+<h3>Repare no que o Claude faz</h3>
+<p>Ele provavelmente não vai cuspir uma tabela de preços de primeira — vai responder com uma pergunta ou duas que esclarecem o que você quer (margem? volume? posicionamento?). Isso não é enrolação: é exatamente o que um bom analista faria antes de mexer nos números. Responda como quiser; as respostas viram premissas, e as premissas moldam tudo o que vem depois.</p>
+<p>Quando a proposta chegar, ela vem com as fontes: "óleo de soja a R$ 6,50 a garrafa (custos-insumos, aba Insumos)", "o pastel de carne da Dona Marta sai a R$ 11 (precos-concorrentes, Pesquisa de Preços)". E aqui entra o motivo de você ter folheado os arquivos antes: <strong>escolha dois ou três números citados e confira na fonte.</strong> Abra a planilha, ache a linha. Se bater, sua confiança no resto sobe com razão. Se não bater, você acabou de aprender a lição mais barata do curso inteiro.</p>
+<div class="checkpoint">✓ <em>Recomendação em mãos. Agora a parte que é sua.</em></div>
+<blockquote><p>O Claude leu em dois minutos o que teria tomado sua manhã de sábado. Mas repare no que aconteceu quando ele citou uma fonte e você foi conferir: <em>a velocidade é dele; a confiança é sua, e não tem como terceirizar.</em> Quanto mais rápido a IA trabalha, mais valioso fica o ser humano que conhece os dados — não menos.</p></blockquote>
+<p>Quando estiver satisfeito com os preços, peça dois arquivos finais: uma <strong>planilha de custos e margens</strong> (Excel) com o cardápio, custo por item, preço e margem; e um <strong>memorando de decisão de preço</strong> (Word) com os preços escolhidos, as premissas e o que você considerou e descartou.</p>
+<h4 class="kicker">SALVE SEU TRABALHO</h4>
+<p>Baixe os dois pelo chat, renomeie para <code>custos.xlsx</code> e <code>preco-decisao.docx</code>, e mova para <code>saidas/</code>. Sua pasta deve ter agora quatro arquivos — eles voltam à cena no Módulo 4.</p>
+<div class="warn">⚠ <em>Antes do próximo módulo — role para cima e responda as perguntas de Reflexão na lateral.</em></div><details class="fb ok"><summary>Deu certo</summary><div class="inner"><p>Os números que você conferiu bateram com a fonte? Repare também em algo mais sutil: em algum momento o Claude provavelmente tomou uma decisão <em>de negócio</em> disfarçada de decisão <em>de cálculo</em> — arredondou um preço para R$ 10 "psicológico", sugeriu combo, escolheu uma margem "típica". Nada disso estava nos seus dados. São escolhas razoáveis, mas são escolhas — e agora são suas. Releia a proposta procurando por elas.</p></div></details><details class="fb nok"><summary>Não deu certo</summary><div class="inner"><ul>
+<li><strong>O Claude pulou as perguntas e foi direto para a tabela.</strong> Responda: "volte à etapa 2 — que perguntas você me faria antes de propor preços?". A numeração do prompt existe para você poder apontar de volta para ela.</li>
+<li><strong>Uma citação não bateu com a planilha.</strong> Diga exatamente isso: "você citou R$ X na aba Y, mas lá consta R$ Z — refaça os cálculos afetados". Veja o que mais muda; erros de leitura raramente vêm sozinhos.</li>
+<li><strong>A resposta veio gigante e você se perdeu.</strong> Peça: "resuma a recomendação em uma tabela de no máximo 6 linhas: item, custo, preço, margem". Você pode pedir o detalhe de volta depois.</li>
+<li><strong>Acabaram as mensagens do plano gratuito.</strong> Este é o módulo onde isso costuma acontecer — os arquivos consomem bastante. O Claude Pro resolve; suas saídas dos módulos anteriores continuam salvas na sua pasta.</li>
+</ul></div></details></article>
+<aside class="sidebar"><h2>REFLEXÃO</h2><p class="noprint" style="font-size:12px;color:var(--soft);margin-top:-8px">Suas respostas ficam salvas neste navegador — reúna tudo em <a href="minhas-respostas.html">Minhas respostas</a>.</p><div class="q"><div class="ql">Que perguntas o Claude te fez antes de propor preços?</div>
+<div class="qh">E o que as suas respostas mudaram no resultado?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-03-q1"></textarea>
+</div>
+<div class="q"><div class="ql">Você conferiu quantos números na fonte? Bateram?</div>
+<textarea placeholder="ex.: conferi 3, bateram 3... ou: 1 não bateu, e descobri que..." data-k="modulo-03-q2"></textarea>
+</div>
+<div class="q"><div class="ql">Que decisão de negócio o Claude tomou sem te avisar?</div>
+<div class="qh">Arredondamento, combo, margem "padrão"...</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-03-q3"></textarea>
+</div>
+<div class="q"><div class="ql">E no seu trabalho: que análise chega pronta na sua mesa — de planilha, relatório ou IA — que você assina sem conferir nenhum número na fonte?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-03-q4"></textarea>
+</div>
+<div class="principle"><span class="pl">O PRINCÍPIO</span>A IA acelera a conta. A confiança continua sendo sua — e ela só existe se você conhece os seus dados.</div>
+<div class="next"><h4 class='kicker'>A SEGUIR</h4><p>Cliente, esquina e preço. Falta a banca ter uma cara. → <strong>Módulo 04 · Marca</strong></p></div></aside>
+</div></div><footer class="mod"><a href="modulo-02.html">← Módulo 02 · Ponto</a><a href="modulo-04.html">Módulo 04 · Marca →</a></footer>
+<script>document.querySelectorAll("textarea,input[type=text]").forEach(e=>{const k="pf-"+(e.dataset.k||Math.random());e.dataset.k&&(e.value=localStorage.getItem(k)||"");e.addEventListener("input",()=>localStorage.setItem(k,e.value))})</script></body></html>

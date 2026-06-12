@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 06 · Operação · Pastel da Feira</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site"><a class="brand" href="index.html"><img src="exo-logo.png" alt="EXO"> Pastel da Feira <small>um caso de IA generativa</small></a><nav class="mods"><a href="index.html"><b>00</b>Visão geral</a><a href="modulo-01.html"><b>01</b>Cliente</a><a href="modulo-02.html"><b>02</b>Ponto</a><a href="modulo-03.html"><b>03</b>Preço</a><a href="modulo-04.html"><b>04</b>Marca</a><a href="modulo-05.html"><b>05</b>Lançamento</a><span class="sep"></span><a href="modulo-06.html" class="cur"><b>06</b>Operação</a><a href="modulo-07.html"><b>07</b>Criação</a><a href="modulo-08.html"><b>08</b>Padrões</a><a href="modulo-09.html"><b>09</b>Skill</a><span class="sep"></span><a href="minhas-respostas.html"><b>✍</b>Respostas</a></nav></header>
+<div class="wrap"><div class="grid">
+<aside class="metabox"><div class="modnum">MÓDULO 06 · PARTE 2</div><h1>Como foi o nosso primeiro domingo?</h1><h4 class="kicker">O QUE VOCÊ ESTÁ FAZENDO</h4>
+<p>Fechando a primeira semana da banca — caixa, estoque e avaliações — numa reunião de segunda-feira com você mesmo.</p>
+<h4 class="kicker">O QUE VOCÊ ESTÁ APRENDENDO</h4>
+<p>No Cowork, o Claude despacha sub-agentes que trabalham em paralelo no seu computador. Você assiste o trabalho acontecer.</p>
+<h4 class="kicker">ONDE VOCÊ VAI TRABALHAR</h4>
+<p>Claude Desktop, no modo Cowork <em>↳ Ainda não tem? <a href="https://claude.ai/download" target="_blank" rel="noopener"><code>claude.ai/download</code></a></em></p>
+<h4 class="kicker">O QUE VOCÊ VAI PRECISAR</h4>
+<p>Pasta <code>operacao/</code> com os arquivos do primeiro domingo: <strong><a class="btn small" href="arquivos/operacao.zip" download>Baixar operacao.zip ↓</a></strong></p>
+<ul>
+<li><code>transacoes.xlsx</code> — cada venda do domingo: hora, item, quantidade, forma de pagamento</li>
+<li><code>avaliacoes.txt</code> — o que os clientes comentaram: no balcão, no WhatsApp, no grupo do bairro</li>
+</ul>
+<p>Coloque a pasta <code>operacao/</code> dentro do seu projeto <code>pastel-da-feira/</code>, ao lado da <code>saidas/</code>.</p></aside>
+<article><p>Primeiro domingo de banca. O movimento começou devagar, teve uma fila assustadora perto do meio-dia, o óleo quase acabou, e alguém pediu pastel de queijo com goiabada três vezes — que você não tinha. Agora é segunda de manhã. Sobre a mesa (digital): uma planilha de transações e um arquivo de avaliações. Hora de fazer o balanço e escrever, para si mesmo, o resumo que define a próxima semana.</p>
+<h3>Antes — um jeito diferente de trabalhar</h3>
+<h4 class="kicker">O Cowork é o Claude agindo no seu computador.</h4>
+<p>No <strong>Chat</strong>, você pergunta e o Claude responde — tudo acontece dentro da conversa. No <strong>Cowork</strong>, o Claude ganha mãos: lê e salva arquivos direto numa pasta sua, e — a novidade de hoje — <strong>divide trabalhos grandes entre sub-agentes</strong>. Quando a tarefa tem partes independentes, o Claude pode despachar agentes que rodam <em>ao mesmo tempo</em>, cada um cuidando de uma frente, e depois juntar tudo. Hoje, no seu primeiro Cowork, você entrega o fechamento da semana e assiste esses agentes trabalharem — cada um ganha até um nome.</p>
+<h3>Três coisas para configurar de uma vez</h3>
+<ol>
+<li><strong>Abra o Claude Desktop</strong> e mude para o modo <strong>Cowork</strong> (em <a href="https://claude.ai/download" target="_blank" rel="noopener"><code>claude.ai/download</code></a> se ainda não instalou).</li>
+<li><strong>Aponte para a sua pasta do projeto</strong> — selecione a pasta <code>pastel-da-feira/</code> quando o Cowork pedir um diretório de trabalho. É assim que o Claude enxerga <code>operacao/</code> e <code>saidas/</code>.</li>
+<li><strong>Confirme a pasta selecionada antes do prompt</strong> — o nome dela deve aparecer na própria interface. Trabalhar na pasta errada é o tropeço nº 1 de quem está começando.</li>
+</ol>
+<p>Neste chat novo, leia o prompt abaixo com atenção antes de enviar — ele diz explicitamente ao Cowork como dividir o trabalho:</p>
+<pre><code>É segunda-feira. Quero o fechamento do primeiro domingo da
+banca de pastel.
+
+Na pasta operacao/ estão transacoes.xlsx (todas as vendas de
+domingo) e avaliacoes.txt (comentários dos clientes). Na pasta
+saidas/ está o contexto do negócio (personas, preços, custos).
+
+Despache dois sub-agentes em paralelo:
+
+- Caixa — leia transacoes.xlsx e produza: faturamento do dia,
+  itens mais e menos vendidos, padrão por horário (quando
+  bombou, quando morreu) e formas de pagamento.
+
+- Voz do cliente — leia avaliacoes.txt e organize os
+  comentários em elogios, reclamações e pedidos (itens que os
+  clientes queriam e não tinham), com frequência de cada um.
+
+Depois junte os dois relatórios num resumo de uma página:
+o que funcionou, o que ajustar, e as 3 decisões que eu
+deveria tomar antes do próximo domingo.
+
+Salve como semana-1-recap.docx na pasta saidas/.</code></pre>
+<h4 class="kicker">O QUE VOCÊ VAI VER</h4>
+<p>O Cowork vai montar um plano, criar os dois sub-agentes — você verá os dois rodando em paralelo, cada um no seu arquivo — e depois sintetizar. Se ele pedir permissão para ler ou salvar na pasta, conceda; o pedido de confirmação é o Cowork respeitando que o computador é seu. A coisa toda leva alguns minutos. Aproveite para assistir: <em>é trabalho acontecendo, não resposta sendo digitada.</em></p>
+<div class="checkpoint">✓ <em>Recap em mãos — direto na sua pasta, sem download.</em></div>
+<h3>Os dois modos, lado a lado</h3>
+<table><tr><th></th><th><strong>CHAT</strong> <em>(Módulos 1–5)</em></th><th><strong>COWORK AGENT</strong> <em>(hoje)</em></th></tr><tr><td>Você dá</td><td>a pergunta e os anexos</td><td>o objetivo e a pasta</td></tr><tr><td>O Claude</td><td>responde na conversa</td><td>age: lê, despacha agentes, salva</td></tr><tr><td>O trabalho fica</td><td>no chat, para você baixar</td><td>nos seus arquivos, direto</td></tr><tr><td>Bom para</td><td>pensar, decidir, redigir</td><td>tarefas com partes independentes</td></tr></table>
+<p><em>O chat continua existindo no Cowork — o agente entra em cena quando há trabalho a despachar, e você não precisa escolher de antemão.</em></p>
+<blockquote><p>É essa a mudança quando você passa do chat para agentes. Nada ficou mais esperto; mudou a <strong>forma</strong>: o trabalho tinha duas partes independentes (números e comentários), então duas frentes rodaram ao mesmo tempo e a síntese veio no final. <em>Chat responde. Agentes fazem. A entrega escolhe a ferramenta.</em></p></blockquote>
+<p>Abra o <code>semana-1-recap.docx</code> que apareceu na sua pasta <code>saidas/</code>. Leia as 3 decisões sugeridas. Alguma te surpreendeu? O pastel de queijo com goiabada apareceu na lista de pedidos? Se algo no recap parecer errado — confira na fonte, como você aprendeu no Módulo 3. A regra não mudou porque a ferramenta mudou.</p>
+<h4 class="kicker">SALVE SEU TRABALHO</h4>
+<p>Nada para baixar — <code>semana-1-recap.docx</code> já está em <code>saidas/</code>, salvo pelo próprio Cowork. Confira que está lá antes de seguir.</p>
+<div class="warn">⚠ <em>Antes do próximo módulo — responda as perguntas de Reflexão na lateral.</em></div><details class="fb ok"><summary>Deu certo</summary><div class="inner"><p>Viu os dois agentes rodarem e o recap aparecer na pasta? Repare no detalhe mais importante: você definiu <em>como dividir o trabalho</em> (caixa vs. voz do cliente) no próprio prompt. O Cowork saberia se dividir sozinho, mas quem conhece as costuras do trabalho divide melhor — e isso é uma habilidade sua, não da ferramenta. Guarde: ela volta no Módulo 8 com nome próprio.</p></div></details><details class="fb nok"><summary>Não deu certo</summary><div class="inner"><ul>
+<li><strong>O Cowork não achou os arquivos.</strong> Quase sempre é pasta errada. Confirme que selecionou <code>pastel-da-feira/</code> (a pasta-mãe), não <code>operacao/</code> — o prompt usa caminhos relativos a ela.</li>
+<li><strong>Rodou tudo num agente só, sem paralelo.</strong> Acontece quando a tarefa parece pequena demais. Reforce: "use dois sub-agentes em paralelo, um por arquivo". Se ainda assim rodar em série, o resultado é o mesmo — o paralelo é eficiência, não mágica.</li>
+<li><strong>O Cowork pediu permissões e você negou sem querer.</strong> Sem pânico: peça "tente salvar de novo" e conceda desta vez. As permissões existem para a IA nunca mexer na sua máquina sem você ver.</li>
+<li><strong>O recap veio raso.</strong> Dê critério: "no relatório do Caixa, quero os números por hora; na Voz do cliente, quero contagem por tema". Agente também trabalha melhor com briefing — Módulo 1, sempre.</li>
+</ul></div></details></article>
+<aside class="sidebar"><h2>REFLEXÃO</h2><p class="noprint" style="font-size:12px;color:var(--soft);margin-top:-8px">Suas respostas ficam salvas neste navegador — reúna tudo em <a href="minhas-respostas.html">Minhas respostas</a>.</p><div class="q"><div class="ql">O que os agentes acharam que você não teria notado sozinho?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-06-q1"></textarea>
+</div>
+<div class="q"><div class="ql">Das 3 decisões sugeridas, qual você toparia na hora? Qual você vetaria?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-06-q2"></textarea>
+</div>
+<div class="q"><div class="ql">E no seu trabalho: que fechamento recorrente — de semana, de sprint, de mês — tem partes independentes que poderiam rodar em paralelo?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-06-q3"></textarea>
+</div>
+<div class="principle"><span class="pl">O PRINCÍPIO</span>Chat responde. Agentes fazem. A entrega escolhe a ferramenta.</div>
+<div class="next"><h4 class='kicker'>A SEGUIR</h4><p>A operação está de pé. Agora um pouco de criação: o que vai ser o especial da próxima semana? → <strong>Módulo 07 · Criação</strong></p></div></aside>
+</div></div><footer class="mod"><a href="modulo-05.html">← Módulo 05 · Lançamento</a><a href="modulo-07.html">Módulo 07 · Criação →</a></footer>
+<script>document.querySelectorAll("textarea,input[type=text]").forEach(e=>{const k="pf-"+(e.dataset.k||Math.random());e.dataset.k&&(e.value=localStorage.getItem(k)||"");e.addEventListener("input",()=>localStorage.setItem(k,e.value))})</script></body></html>

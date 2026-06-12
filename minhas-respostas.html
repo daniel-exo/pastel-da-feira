@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minhas respostas · Pastel da Feira</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site"><a class="brand" href="index.html"><img src="exo-logo.png" alt="EXO"> Pastel da Feira <small>um caso de IA generativa</small></a><nav class="mods"><a href="index.html"><b>00</b>Visão geral</a><a href="modulo-01.html"><b>01</b>Cliente</a><a href="modulo-02.html"><b>02</b>Ponto</a><a href="modulo-03.html"><b>03</b>Preço</a><a href="modulo-04.html"><b>04</b>Marca</a><a href="modulo-05.html"><b>05</b>Lançamento</a><span class="sep"></span><a href="modulo-06.html"><b>06</b>Operação</a><a href="modulo-07.html"><b>07</b>Criação</a><a href="modulo-08.html"><b>08</b>Padrões</a><a href="modulo-09.html"><b>09</b>Skill</a><span class="sep"></span><a href="minhas-respostas.html" class="cur"><b>✍</b>Respostas</a></nav></header>
+<div class="wrap"><div class="hero">
+<div class="casetag">PASTEL DA FEIRA · REFLEXÕES</div>
+<h1 id="rh">Minhas respostas</h1>
+<p class="lede">Tudo o que você escreveu nos painéis de Reflexão, módulo a módulo — salvo neste navegador. Confira, complete o nome e gere o PDF.</p>
+<div class="q noprint" style="max-width:420px">
+<input type="text" id="rnome" placeholder="Seu nome" data-k="modulo-08-nome">
+<input type="text" id="remail" placeholder="Seu e-mail" style="margin-top:6px" data-k="modulo-08-email">
+<button class="btn" style="margin-top:12px" onclick="gerarPDF()">Baixar como PDF</button>
+<p style="font-size:12px;color:var(--soft)">Na janela de impressão, escolha “Salvar como PDF”.</p>
+</div>
+<div id="meta" style="display:none;color:var(--soft);font-size:14px;margin:6px 0 20px"></div>
+<div id="resp"></div>
+</div></div>
+<script>const QD=[{"slug": "modulo-01", "num": "01", "name": "Cliente", "qs": [{"k": "modulo-01-q1", "l": "O que sua primeira tentativa produziu?"}, {"k": "modulo-01-q2", "l": "O que você mudou no segundo prompt?"}, {"k": "modulo-01-q3", "l": "Olhando suas três personas finais — o que é útil de verdade? O que ainda parece genérico?"}, {"k": "modulo-01-q4", "l": "E no seu trabalho: que pedido vago você faz hoje — a um colega, a um fornecedor, a uma IA — que volta genérico do mesmo jeito?"}]}, {"slug": "modulo-02", "num": "02", "name": "Ponto", "qs": [{"k": "modulo-02-q1", "l": "Quais pontos o Claude sugeriu?"}, {"k": "modulo-02-q2", "l": "Qual você escolheria, e por quê?"}, {"k": "modulo-02-q3", "l": "Você seguiu a sugestão do Claude?"}, {"k": "modulo-02-q4", "l": "E no seu trabalho: que análise você recebe pronta — de um relatório, um dashboard, uma consultoria — em que o seu conhecimento de contexto deveria pesar mais do que pesa?"}]}, {"slug": "modulo-03", "num": "03", "name": "Preço", "qs": [{"k": "modulo-03-q1", "l": "Que perguntas o Claude te fez antes de propor preços?"}, {"k": "modulo-03-q2", "l": "Você conferiu quantos números na fonte? Bateram?"}, {"k": "modulo-03-q3", "l": "Que decisão de negócio o Claude tomou sem te avisar?"}, {"k": "modulo-03-q4", "l": "E no seu trabalho: que análise chega pronta na sua mesa — de planilha, relatório ou IA — que você assina sem conferir nenhum número na fonte?"}]}, {"slug": "modulo-04", "num": "04", "name": "Marca", "qs": [{"k": "modulo-04-q1", "l": "Que pergunta a Skill fez que você nunca teria pensado em fazer?"}, {"k": "modulo-04-q2", "l": "Olhando o manual pronto — parece seu, ou parece um kit genérico?"}, {"k": "modulo-04-q3", "l": "Que tarefa recorrente do seu trabalho — algo que você faz sempre e os outros não sabem fazer — você imagina empacotando numa Skill?"}]}, {"slug": "modulo-05", "num": "05", "name": "Lançamento", "qs": [{"k": "modulo-05-q1", "l": "O que mudou entre o primeiro rascunho e a versão final?"}, {"k": "modulo-05-q2", "l": "Qual foi o seu melhor prompt de iteração?"}, {"k": "modulo-05-q3", "l": "Olhando o site pronto: que parte ainda é mais do Claude do que sua?"}, {"k": "modulo-05-q4", "l": "E no seu trabalho: qual é o \"primeiro rascunho a 80%\" que você costuma entregar como se fosse final — e que mereceria duas passadas de iteração?"}]}, {"slug": "modulo-06", "num": "06", "name": "Operação", "qs": [{"k": "modulo-06-q1", "l": "O que os agentes acharam que você não teria notado sozinho?"}, {"k": "modulo-06-q2", "l": "Das 3 decisões sugeridas, qual você toparia na hora? Qual você vetaria?"}, {"k": "modulo-06-q3", "l": "E no seu trabalho: que fechamento recorrente — de semana, de sprint, de mês — tem partes independentes que poderiam rodar em paralelo?"}]}, {"slug": "modulo-07", "num": "07", "name": "Criação", "qs": [{"k": "modulo-07-q1", "l": "Qual gerador produziu o melhor candidato — e o pior?"}, {"k": "modulo-07-q2", "l": "Você confirmou ou vetou o vencedor do filtro? Por quê?"}, {"k": "modulo-07-q3", "l": "E no seu trabalho: que decisão vocês tomam hoje a partir do primeiro palpite decente — onde gerar 12 opções e filtrar com critério mudaria o resultado?"}]}, {"slug": "modulo-08", "num": "08", "name": "Padrões", "qs": [{"k": "modulo-08-q1", "l": "Qual dos seis padrões já roda no seu trabalho — informalmente, com humanos?"}, {"k": "modulo-08-q2", "l": "Qual padrão seria o mais rápido de colocar de pé como um fluxo agêntico de verdade? Em que decisão ou tarefa recorrente?"}, {"k": "modulo-08-q3", "l": "Esboce o primeiro movimento. Três frases. O que você testa até a próxima segunda-feira?"}]}, {"slug": "modulo-09", "num": "09", "name": "Skill", "qs": [{"k": "modulo-09-q1", "l": "Que pergunta de esclarecimento do Claude te obrigou a decidir algo que estava implícito na sua cabeça?"}, {"k": "modulo-09-q2", "l": "Compare com o Módulo 4: o que você só entendeu sobre Skills agora, construindo uma?"}, {"k": "modulo-09-q3", "l": "Qual processo do seu trabalho — aquele da pergunta do Módulo 4 — vira a sua próxima Skill? Quem a usaria além de você?"}]}];
+function esc(t){const d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function render(){
+ const box=document.getElementById('resp');box.innerHTML='';
+ QD.forEach(m=>{
+  let h='<h2 style="font-size:13px;letter-spacing:.16em;color:var(--accent-dark);border-bottom:1px solid var(--line);padding-bottom:6px;margin-top:34px">MÓDULO '+m.num+' · '+m.name.toUpperCase()+'</h2>';
+  let any=false;
+  m.qs.forEach(q=>{const v=localStorage.getItem('pf-'+q.k);
+   if(v&&v.trim()){any=true;h+='<p style="margin:14px 0 4px;font-weight:600;font-size:14px">'+esc(q.l)+'</p><p style="margin:0;white-space:pre-wrap">'+esc(v)+'</p>'}});
+  if(!any)h+='<p style="font-style:italic;color:var(--soft)">Nenhuma resposta registrada neste módulo.</p>';
+  box.innerHTML+=h});
+ const n=localStorage.getItem('pf-modulo-08-nome')||'', e=localStorage.getItem('pf-modulo-08-email')||'';
+ if(n){document.getElementById('rh').textContent=n+' — nove módulos de reflexão';}
+ const meta=document.getElementById('meta');
+ meta.style.display='block';
+ meta.textContent=(e?e+'  ·  ':'')+new Date().toLocaleDateString('pt-BR',{day:'numeric',month:'long',year:'numeric'})+'  ·  Estratégia e execução com IA generativa';
+}
+function gerarPDF(){render();const n=localStorage.getItem('pf-modulo-08-nome')||'';document.title='Pastel da Feira — Reflexões'+(n?' · '+n:'');window.print()}
+window.addEventListener('DOMContentLoaded',()=>{render();
+ document.querySelectorAll('#rnome,#remail').forEach(el=>el.addEventListener('input',render));});
+</script>
+<script>document.querySelectorAll("textarea,input[type=text]").forEach(e=>{const k="pf-"+(e.dataset.k||Math.random());e.dataset.k&&(e.value=localStorage.getItem(k)||"");e.addEventListener("input",()=>localStorage.setItem(k,e.value))})</script></body></html>

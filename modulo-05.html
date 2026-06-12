@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Módulo 05 · Lançamento · Pastel da Feira</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site"><a class="brand" href="index.html"><img src="exo-logo.png" alt="EXO"> Pastel da Feira <small>um caso de IA generativa</small></a><nav class="mods"><a href="index.html"><b>00</b>Visão geral</a><a href="modulo-01.html"><b>01</b>Cliente</a><a href="modulo-02.html"><b>02</b>Ponto</a><a href="modulo-03.html"><b>03</b>Preço</a><a href="modulo-04.html"><b>04</b>Marca</a><a href="modulo-05.html" class="cur"><b>05</b>Lançamento</a><span class="sep"></span><a href="modulo-06.html"><b>06</b>Operação</a><a href="modulo-07.html"><b>07</b>Criação</a><a href="modulo-08.html"><b>08</b>Padrões</a><a href="modulo-09.html"><b>09</b>Skill</a><span class="sep"></span><a href="minhas-respostas.html"><b>✍</b>Respostas</a></nav></header>
+<div class="wrap"><div class="grid">
+<aside class="metabox"><div class="modnum">MÓDULO 05</div><h1>Como lançamos?</h1><h4 class="kicker">O QUE VOCÊ ESTÁ FAZENDO</h4>
+<p>Compondo tudo o que você construiu em algo que dá para compartilhar — um site que você poderia publicar amanhã.</p>
+<h4 class="kicker">O QUE VOCÊ ESTÁ APRENDENDO</h4>
+<p>IA como construtora: o primeiro rascunho chega rápido; a iteração é onde o trabalho acontece.</p>
+<h4 class="kicker">ONDE VOCÊ VAI TRABALHAR</h4>
+<p>Claude (claude.ai ou app desktop)</p>
+<h4 class="kicker">O QUE VOCÊ VAI PRECISAR</h4>
+<p>Tudo o que você acumulou — os cinco arquivos da sua pasta <code>pastel-da-feira/saidas/</code>. Nada novo para baixar.</p>
+<pre><code>saidas/
+  personas.docx          ← do Módulo 1
+  ponto-decisao.docx     ← do Módulo 2
+  preco-decisao.docx     ← do Módulo 3
+  custos.xlsx            ← do Módulo 3
+  manual-de-marca.html   ← do Módulo 4</code></pre></aside>
+<article><p>Você está na reta final. Personas. Uma esquina. Preços. Um manual de marca. Está tudo na sua pasta <code>saidas/</code>, representando o trabalho real de quatro módulos. Mas nada disso é <em>compartilhável</em> ainda — um cliente não visita uma pasta, um sócio não prova um memorando. Esta noite você transforma artefatos de trabalho em algo que de fato coloca gente na frente da banca no domingo.</p>
+<h3>Antes — o que é um artefato?</h3>
+<h4 class="kicker">Uma peça de trabalho que o Claude constrói como uma coisa separada do chat.</h4>
+<p>Diferente de uma resposta normal de texto, um artefato aparece num painel próprio ao lado da conversa. Pode ser visualizado (sites em HTML renderizam de verdade, código aparece formatado, documentos têm layout), <strong>baixado</strong> e <strong>publicado</strong> como link compartilhável — e o Claude pode <strong>atualizá-lo no lugar</strong> enquanto vocês conversam, em vez de colar uma versão nova a cada mensagem. Hoje, o site da Pastel da Feira será um artefato em HTML.</p>
+<h3>O que você vai compor</h3>
+<h4 class="kicker">A PROPOSTA — um site de uma página</h4>
+<p>Um site simples em HTML, de página única, que o Claude constrói e renderiza inline no chat. Quando publicado, vira um link compartilhável.</p>
+<h4 class="kicker">O PÚBLICO</h4>
+<p>Clientes — e também o pessoal que você quer avisar: vizinhos, antigos colegas de trabalho, o grupo da família.</p>
+<h4 class="kicker">O CONTEÚDO</h4>
+<p>A banca: onde fica e quando abre, o cardápio com preços, a história de quem largou o escritório pelo tacho — tudo com a cara, as cores e a voz do seu manual de marca.</p>
+<p>Abra o Claude num chat novo. Anexe <strong>os cinco arquivos</strong> da sua pasta <code>saidas/</code> e envie o prompt abaixo:</p>
+<pre><code>Me ajude a construir um site de uma página para a minha banca
+de pastel e caldo de cana — um artefato HTML de página única.
+
+Anexei tudo: minhas personas, a decisão de ponto, a decisão de
+preço, a planilha de custos e o manual de marca em HTML.
+
+O site precisa ter: onde e quando encontrar a banca, o cardápio
+com os preços, e uma seção curta &quot;quem faz&quot; com a minha
+história. Siga o manual de marca à risca — cores, tipografia e
+tom de voz vêm de lá. Escreva pensando nas personas: é para
+elas que o site fala.
+
+Construa um primeiro rascunho completo e depois me pergunte o
+que ajustar.</code></pre>
+<h4 class="kicker">O QUE VOCÊ VAI VER — E O QUE VEM DEPOIS</h4>
+<p>O Claude possivelmente fará uma ou duas perguntas de esclarecimento e então vai construir, e você verá o site tomando forma no painel de artefato. O que volta é um <strong>rascunho a 80–90%</strong>. De longe, impressiona: as cores estão lá, o cardápio está lá, tem até uma frase de efeito que você não escreveu. É exatamente agora que começa a parte que diferencia quem usa IA bem: <em>o primeiro rascunho não é o produto; a conversa é o trabalho.</em></p>
+<div class="checkpoint">✓ <em>Primeiro rascunho em mãos. Agora vem a parte que a maioria pula.</em></div>
+<h3>Agora, itere</h3>
+<p><em>A primeira passada é o rascunho. A conversa é o trabalho.</em></p>
+<ol>
+<li><strong>Visualize o artefato</strong> no painel — leia como cliente, não como dono.</li>
+<li><strong>Leia em voz alta a seção "quem faz"</strong> — soa como você ou como release de assessoria?</li>
+<li><strong>Confira contra o manual de marca</strong> — as cores são as do manual mesmo, ou "quase"?</li>
+<li><strong>Diga ao Claude em linguagem comum</strong> o que mudar — sem termo técnico, aponte o que incomoda.</li>
+<li><strong>Bem longe da feira?</strong> — peça o endereço destacado e como chegar.</li>
+<li><strong>Repita</strong> até dar orgulho de mandar no grupo da família.</li>
+</ol>
+<h4 class="kicker">SEUS PROMPTS DE ITERAÇÃO VÃO PARECER CONVERSA DE OBRA — E ESTÁ CERTO ASSIM:</h4>
+<pre><code>&quot;O site parece de hamburgueria gourmet — quero cara de feira,
+ de domingo de sol.&quot;
+&quot;O cardápio tá muito espremido no celular — dá pra respirar?&quot;
+&quot;Tira &#x27;experiência gastronômica&#x27;. É pastel. Bota &#x27;pastel que
+ estala na mordida&#x27;.&quot;
+&quot;O caldo de cana sumiu — ele divide o palco com o pastel, não
+ é coadjuvante.&quot;
+&quot;Bom. Agora a manchete tá genérica — usa a frase de
+ posicionamento do manual.&quot;</code></pre>
+<p>Faça agora: <strong>pelo menos duas passadas</strong> de ajustes específicos. Depois o teste final — você apertaria "publicar" e mandaria esse link para um conhecido exigente? Se hesitou, aí está a sua terceira passada.</p>
+<blockquote><p>Você compôs quatro módulos de trabalho numa coisa só — num site funcional — em uma sessão. Os arquivos que você foi salvando deixaram de ser lição de casa: eram o briefing inteiro, prontos para serem compostos. <em>Inputs organizados compõem. O primeiro rascunho é rascunho; a conversa é o trabalho.</em></p></blockquote>
+<h4 class="kicker">SALVE SEU TRABALHO</h4>
+<p>Baixe o HTML final do artefato e salve como <code>site-da-banca.html</code> na sua pasta <code>saidas/</code>. Se quiser, use o botão de <strong>publicar</strong> do artefato para gerar um link compartilhável — e aí sim, manda no grupo da família.</p>
+<div class="warn">⚠ <em>Fim da Parte 1 — responda as perguntas de Reflexão na lateral. Na Parte 2, a banca abre e a operação começa.</em></div><details class="fb ok"><summary>Deu certo</summary><div class="inner"><p>O site renderizou com a sua marca e o seu cardápio? Antes de comemorar, faça o teste de estranho: mostre para alguém que não acompanhou nada disso e peça para a pessoa dizer, em 10 segundos, <em>o quê, onde e quanto</em>. Se ela tropeçar em qualquer um dos três, você sabe exatamente o que iterar. E note o que aconteceu nas suas passadas de ajuste: seus pedidos ficaram cada vez mais específicos. Rascunho → reação → pedido melhor → versão melhor. Esse ciclo é o jeito de trabalhar com IA construtora — em qualquer projeto, não só neste.</p></div></details><details class="fb nok"><summary>Não deu certo</summary><div class="inner"><ul>
+<li><strong>O site veio sem as cores do manual.</strong> O Claude às vezes "se inspira" em vez de obedecer. Diga: "use exatamente as cores e fontes definidas no manual-de-marca.html — cite quais valores você está usando".</li>
+<li><strong>O artefato não renderizou, só apareceu código.</strong> Procure o botão de visualização no painel do artefato (alterna entre código e prévia). Se não houver, peça: "renderize como artefato HTML visualizável".</li>
+<li><strong>O Claude refez o site inteiro quando você pediu um ajuste pequeno.</strong> Peça: "altere apenas a seção do cardápio; mantenha todo o resto como está". Artefatos suportam atualização no lugar — exija isso.</li>
+<li><strong>Acabaram as mensagens no meio da iteração.</strong> Este é o módulo mais longo. Seu progresso não some: o artefato fica na conversa. Volte mais tarde, ou — se estiver no plano gratuito — este é o empurrão final para o Pro.</li>
+</ul></div></details></article>
+<aside class="sidebar"><h2>REFLEXÃO</h2><p class="noprint" style="font-size:12px;color:var(--soft);margin-top:-8px">Suas respostas ficam salvas neste navegador — reúna tudo em <a href="minhas-respostas.html">Minhas respostas</a>.</p><div class="q"><div class="ql">O que mudou entre o primeiro rascunho e a versão final?</div>
+<div class="qh">Liste duas ou três mudanças que você pediu.</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-05-q1"></textarea>
+</div>
+<div class="q"><div class="ql">Qual foi o seu melhor prompt de iteração?</div>
+<div class="qh">O pedido que mais melhorou o site de uma vez.</div>
+<textarea placeholder="Cole ele aqui..." data-k="modulo-05-q2"></textarea>
+</div>
+<div class="q"><div class="ql">Olhando o site pronto: que parte ainda é mais do Claude do que sua?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-05-q3"></textarea>
+</div>
+<div class="q"><div class="ql">E no seu trabalho: qual é o "primeiro rascunho a 80%" que você costuma entregar como se fosse final — e que mereceria duas passadas de iteração?</div>
+<textarea placeholder="Uma frase ou duas..." data-k="modulo-05-q4"></textarea>
+</div>
+<div class="principle"><span class="pl">O PRINCÍPIO</span>Inputs organizados compõem. O primeiro rascunho é o rascunho; a conversa é o trabalho.</div>
+<div class="next"><h4 class='kicker'>A SEGUIR</h4><p>A banca está de pé, com marca e site. Domingo ela abre — e segunda-feira tem caixa para fechar, estoque para contar e avaliações para ler. → <strong>Parte 2 · Módulo 06 · Operação</strong></p></div></aside>
+</div></div><footer class="mod"><a href="modulo-04.html">← Módulo 04 · Marca</a><a href="modulo-06.html">Módulo 06 · Operação →</a></footer>
+<script>document.querySelectorAll("textarea,input[type=text]").forEach(e=>{const k="pf-"+(e.dataset.k||Math.random());e.dataset.k&&(e.value=localStorage.getItem(k)||"");e.addEventListener("input",()=>localStorage.setItem(k,e.value))})</script></body></html>
